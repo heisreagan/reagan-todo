@@ -1,74 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <title>Document</title>
 
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
-  <title>Frontend Mentor | Todo app</title>
-
 </head>
-
 <body>
-  <div class="container">
-    <div class="Todo">
-      <h1>TODO</h1>
-    </div>
-
-    <div class="search">
-      <input type="text" id="create" placeholder="Create a new Todo">
-    </div>
-
-    <div class="to-do-task">
-      <button class="button-with-checkbox">
-        <input type="checkbox" id="myCheckbox">
-        Complete online JavaScript course
-      </button>
-      <button class="button-with-checkbox">
-        <input type="checkbox" id="myCheckbox">
-        Jog around the park 3x
-      </button>
-      <button class="button-with-checkbox">
-        <input type="checkbox" id="myCheckbox">
-        10 minutes meditation
-      </button>
-      <button class="button-with-checkbox">
-        <input type="checkbox" id="myCheckbox">
-        Read for 1 hour
-      </button>
-      <button class="button-with-checkbox">
-        <input type="checkbox" id="myCheckbox">
-        Pick up groceries
-      </button>
-      <button class="button-with-checkbox">
-        <input type="checkbox" id="myCheckbox">
-        Complete a Todo App on Frontend Mentor
-      </button>
-
-    </div>
-
-    <div class="items">
-      <div class="items-done">
-        <span>items left</span>
-        <span>All</span>
-        <span>Active</span>
-        <span>completed</span>
-        <span>Clear Completed</span>
+  <body>
+    <div class="container">
+      <div class="Todo">
+        <h1>TODO</h1>
+      </div>
+  
+      <div class="search">
+        <input type="text" id="taskInput" placeholder="Create a new Todo">
+        <button id="addTask">+</button>
+      </div>
+  
+      <ul class="task-list" id="taskList">
+        <!-- Tasks will be dynamically added here -->
+      </ul>
+  
+      <div class="items">
+        <div class="items-done">
+          <span id="itemsLeft">0 items left</span>
+          <span id="filterAll" class="filter active">All</span>
+          <span id="filterActive" class="filter">Active</span>
+          <span id="filterCompleted" class="filter">Completed</span>
+          <span id="clearCompleted">Clear Completed</span>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-
-  <!-- <script src="script.js"></script> -->
-
+  
+    <script src="script.js"></script>
+  </body>
+  
 </body>
-
 </html>
