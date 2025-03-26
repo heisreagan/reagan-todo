@@ -124,7 +124,8 @@
   
   #clearCompleted {
     cursor: pointer;
-    color: var(--text-light);
+    /* color: var(--text-light); */
+    color: red;
   }
   
   body[data-theme="light"] {
@@ -140,6 +141,7 @@
   @media (max-width: 500px) {
     .container {
       width: 90%;
+      font-size: .8rem;
     }
   }
   
