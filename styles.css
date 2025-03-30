@@ -36,8 +36,23 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url(images/bg-desktop-light.jpg) no-repeat center top;
     width: 100vw;
+    position: relative;
+  }
+  
+  body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    /* background-color: red; */
+    background-image: url(images/bg-desktop-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
   }
   
   .container {
